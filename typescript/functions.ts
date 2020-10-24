@@ -34,7 +34,7 @@ getAverage(10,20,30,40,50,60,70);// istedigimiz kadar deger girebiliriz
 const getSquare = (...b:number[]):number => {
   let square = 0;
   for (let i = 0; i < b.length; i++){
-    square = b[i]*b[i]
+    square *=b[i]
   }
 
   return square;
