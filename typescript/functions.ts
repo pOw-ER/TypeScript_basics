@@ -30,3 +30,13 @@ const getAverage = (...a:number[]):string => {//burda a number array i ile fonks
   return 'result : '+ result;
 }
 getAverage(10,20,30,40,50,60,70);// istedigimiz kadar deger girebiliriz
+
+const getSquare = (...b:number[]):number => {
+  let square = 0;
+  for (let i = 0; i < b.length; i++){
+    square = b[i]*b[i]
+  }
+
+  return square;
+}
+getSquare(1,2,3,4);
