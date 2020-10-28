@@ -26,15 +26,15 @@ var getAverage = function () {
     return 'result : ' + result;
 };
 getAverage(10, 20, 30, 40, 50, 60, 70); // istedigimiz kadar deger girebiliriz
-// var getSquare = function () {
-//     var b = [];
-//     for (var _i = 0; _i < arguments.length; _i++) {
-//         b[_i] = arguments[_i];
-//     }
-//     var square = 0;
-//     for (var i = 0; i < b.length; i++) {
-//         square *= b[i];
-//     }
-//     return square;
-// };
-// getSquare(1, 2, 3, 4);
+var getSquare = function () {
+    var b = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        b[_i] = arguments[_i];
+    }
+    var square = 0;
+    for (var i = 0; i < b.length; i++) {
+        square *= b[i];
+    }
+    return square;
+};
+getSquare(1, 2, 3, 4);
