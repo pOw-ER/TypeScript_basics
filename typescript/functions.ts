@@ -39,4 +39,4 @@ const getSquare = (...b:number[]):number => {
 
   return square;
 }
-getSquare(1,2,3,4);
+getSquare(1,2,3,4,5,6);
