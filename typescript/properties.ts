@@ -45,7 +45,7 @@ let taxi_1 = Taxi = new Taxi({x: 2, y: 5},'red'); // color constructorundan sonr
 
 taxi_1.travelTo({x:1 , y:2});
 
-let currentLocation = taxi_1.location; // artik location property si olusturduk.
+let currentLocation = taxi_1.location; // artik location property si olusturduk. ve burdan ulasabiliriz location a
 
 taxi_1.location = {x:1 , y:9};
 
