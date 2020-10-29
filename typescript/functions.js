@@ -37,4 +37,4 @@ var getSquare = function () {
     }
     return square;
 };
-console.log(getSquare(1, 2, 3, 4, 5, 6));
+getSquare(1, 2, 3, 4, 5, 6);
