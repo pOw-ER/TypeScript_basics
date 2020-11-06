@@ -16,13 +16,30 @@ class ProductService implements IProductService{
     return this.products.filter(p => p.id === id)[0];
   }
   getProducts(): Product[] {
-
+    return this.products;
   }
   saveProduct(product: Product): void {
-
+    if (product.id === 0 || product.id ==null){
+      product.id = this.generateId();
+      this.products.push(product);
+    }
+    else{
+      let index = this.products.indexOf(product);
+      this.products.splice(index,1,product);
+    }
   }
   deleteProduct(product: Product): void {
-
+    let index = this.products.indexOf(product);
+    if(index>0){
+      this.products.splice(index,1);
+    }
+  }
+  private generateId():number{
+    let key = 1;
+    while(this.getById(key)!= null){
+      key++;
+    }
+    return key;
   }
 
 }
