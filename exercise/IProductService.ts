@@ -6,3 +6,4 @@ export interface IProductService {
   saveProduct(product:Product): void;
   deleteProduct(product:Product):void;
 }
+
